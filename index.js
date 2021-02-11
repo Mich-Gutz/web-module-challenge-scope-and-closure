@@ -64,7 +64,7 @@ NOTE: This will be a callback function for the tasks below
 
 function inning(score){
   return function(){
-  const points = Math.floor(Math.random() * 2);
+  const score = Math.floor(Math.random());
   console.log(inning(score))
 }
 }
@@ -84,20 +84,24 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
-}
+function finalScore(inning, num1){
+  return function(){
+  console.log(inning(score))
+  return
 
+  }
+}
+console.log (finalScore(inning,9))
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
+function getInningScore(inning) {
   /*Your Code Here */
 }
 
-
+console.log (inning(callback))
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
   1. Receive the callback function `getInningScore` from Task 4
